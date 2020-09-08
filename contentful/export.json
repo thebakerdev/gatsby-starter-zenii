@@ -2818,7 +2818,7 @@
         "id": "lmimCiUNcB7bChQeCkSt7",
         "type": "Entry",
         "createdAt": "2020-09-04T07:50:38.920Z",
-        "updatedAt": "2020-09-04T07:51:50.711Z",
+        "updatedAt": "2020-09-08T11:55:23.398Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2826,8 +2826,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2020-09-04T07:51:50.711Z",
+        "publishedVersion": 7,
+        "publishedAt": "2020-09-08T11:55:23.398Z",
         "firstPublishedAt": "2020-09-04T07:51:50.711Z",
         "createdBy": {
           "sys": {
@@ -2843,8 +2843,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2875,7 +2875,7 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "ElVe8IZJMxROI87lueH9F"
+              "id": "4MsfSbNISyI7O5jM8H9m6U"
             }
           }
         }
@@ -3972,73 +3972,6 @@
             "id": "p9ztf7mkb1tk"
           }
         },
-        "id": "7b1XBCK6oKuu0MI6CGmx2j",
-        "type": "Asset",
-        "createdAt": "2020-09-04T07:46:21.449Z",
-        "updatedAt": "2020-09-04T07:47:03.594Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2020-09-04T07:47:03.594Z",
-        "firstPublishedAt": "2020-09-04T07:47:03.594Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4YVrlf9LVBCJgRMugl5FED"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4YVrlf9LVBCJgRMugl5FED"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4YVrlf9LVBCJgRMugl5FED"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "face1"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/p9ztf7mkb1tk/7b1XBCK6oKuu0MI6CGmx2j/919f1495088c91685359fc29cad12627/face1.jpg",
-            "details": {
-              "size": 15641,
-              "image": {
-                "width": 100,
-                "height": 100
-              }
-            },
-            "fileName": "face1.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "p9ztf7mkb1tk"
-          }
-        },
         "id": "7tssErXhbLeuF5DsTAUgpv",
         "type": "Asset",
         "createdAt": "2020-09-04T07:49:51.576Z",
@@ -4092,73 +4025,6 @@
               }
             },
             "fileName": "face2.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "p9ztf7mkb1tk"
-          }
-        },
-        "id": "ElVe8IZJMxROI87lueH9F",
-        "type": "Asset",
-        "createdAt": "2020-09-04T07:51:14.937Z",
-        "updatedAt": "2020-09-04T07:51:36.071Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2020-09-04T07:51:36.071Z",
-        "firstPublishedAt": "2020-09-04T07:51:36.071Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4YVrlf9LVBCJgRMugl5FED"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4YVrlf9LVBCJgRMugl5FED"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "4YVrlf9LVBCJgRMugl5FED"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "face3"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/p9ztf7mkb1tk/ElVe8IZJMxROI87lueH9F/5bb7f25c564f6518fdad43e3514c1e67/face3.jpg",
-            "details": {
-              "size": 15191,
-              "image": {
-                "width": 100,
-                "height": 100
-              }
-            },
-            "fileName": "face3.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -4635,6 +4501,73 @@
             },
             "fileName": "contact.png",
             "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "4MsfSbNISyI7O5jM8H9m6U",
+        "type": "Asset",
+        "createdAt": "2020-09-08T11:54:21.180Z",
+        "updatedAt": "2020-09-08T11:55:15.722Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-08T11:55:15.722Z",
+        "firstPublishedAt": "2020-09-08T11:55:15.722Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "face3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/4MsfSbNISyI7O5jM8H9m6U/4d137962783c2535987ea4d086a2deef/face3.jpg",
+            "details": {
+              "size": 15191,
+              "image": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "fileName": "face3.jpg",
+            "contentType": "image/jpeg"
           }
         }
       }
