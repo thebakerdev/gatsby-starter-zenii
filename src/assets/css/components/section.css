@@ -1,0 +1,21 @@
+.section {
+    @apply flex flex-col px-4 py-20;
+}
+
+.section__title {
+    @apply mb-3 text-4xl font-bold;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        @apply bg-primary rounded-full mr-3;
+    }
+}
+
+@screen md {
+    .section {
+        @apply flex-row px-4;
+    }
+}

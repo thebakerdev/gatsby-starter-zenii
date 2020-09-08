@@ -1,0 +1,4774 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layout",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T10:52:57.371Z",
+        "updatedAt": "2020-09-01T11:11:39.918Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-01T11:11:39.918Z",
+        "firstPublishedAt": "2020-09-01T10:52:58.178Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Layout",
+      "description": "Contains different layouts",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contentModule",
+          "name": "Content Module",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "layoutAbout",
+                  "layoutContact",
+                  "layoutHero",
+                  "layoutPricing",
+                  "layoutServices",
+                  "layoutTestimonials"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layoutHero",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T10:57:33.236Z",
+        "updatedAt": "2020-09-04T03:45:43.570Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T03:45:43.570Z",
+        "firstPublishedAt": "2020-09-01T10:57:34.551Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Layout > Hero",
+      "description": "Content model for hero section",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "subheading",
+          "name": "Subheading",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaText",
+          "name": "CTA Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ctaUrl",
+          "name": "CTA Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layoutAbout",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:02:11.716Z",
+        "updatedAt": "2020-09-04T03:43:04.814Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-09-04T03:43:04.814Z",
+        "firstPublishedAt": "2020-09-01T11:02:13.229Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Layout > About",
+      "description": "Content model for about section",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "featureItem",
+          "name": "Featured Items",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "featuredItem"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layoutTestimonials",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:05:53.361Z",
+        "updatedAt": "2020-09-04T03:46:27.988Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-04T03:46:27.988Z",
+        "firstPublishedAt": "2020-09-01T11:05:54.676Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Layout > Testimonials",
+      "description": "Content model for testimonials section",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "testimonials",
+          "name": "Testimonials",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "testimonial"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layoutServices",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:07:34.478Z",
+        "updatedAt": "2020-09-06T11:03:07.725Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:03:07.725Z",
+        "firstPublishedAt": "2020-09-01T11:07:35.373Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Layout > Services",
+      "description": "Content model for services section.",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "serviceItems",
+          "name": "Service Items",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "serviceItem"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layoutPricing",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:09:08.679Z",
+        "updatedAt": "2020-09-04T03:46:09.533Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-04T03:46:09.533Z",
+        "firstPublishedAt": "2020-09-01T11:09:10.194Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Layout > Pricing",
+      "description": "Content model for pricing section",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pricingPlans",
+          "name": "Pricing Plans",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "pricingPlan"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "layoutContact",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:10:59.915Z",
+        "updatedAt": "2020-09-04T03:45:20.897Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T03:45:20.897Z",
+        "firstPublishedAt": "2020-09-01T11:11:01.092Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "heading",
+      "name": "Layout > Contact",
+      "description": "Content model for contact section",
+      "fields": [
+        {
+          "id": "heading",
+          "name": "Heading",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "featuredItem",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:14:15.709Z",
+        "updatedAt": "2020-09-04T03:47:26.100Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T03:47:26.100Z",
+        "firstPublishedAt": "2020-09-01T11:14:16.989Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Featured Item",
+      "description": "Content model for featured item",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "icon",
+          "name": "Icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "testimonial",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:15:57.567Z",
+        "updatedAt": "2020-09-01T11:15:58.851Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2020-09-01T11:15:58.851Z",
+        "firstPublishedAt": "2020-09-01T11:15:58.851Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Testimonial",
+      "description": "Content model for testimonial",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "company",
+          "name": "Company",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "comment",
+          "name": "Comment",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "pricingPlan",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:44:53.011Z",
+        "updatedAt": "2020-09-06T11:15:26.890Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:15:26.890Z",
+        "firstPublishedAt": "2020-09-01T11:44:53.872Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Pricing Plan",
+      "description": "Content model for pricing plan",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "currency",
+          "name": "Currency",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "max": 2
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "Price",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "perItem",
+          "name": "Per Item",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "planFeatures",
+          "name": "Plan Features",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "buttonText",
+          "name": "Button Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "buttonUrl",
+          "name": "Button Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "featured",
+          "name": "Featured?",
+          "type": "Boolean",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "serviceItem",
+        "type": "ContentType",
+        "createdAt": "2020-09-01T11:46:53.411Z",
+        "updatedAt": "2020-09-04T03:46:57.807Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T03:46:57.807Z",
+        "firstPublishedAt": "2020-09-01T11:46:54.151Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Service Item",
+      "description": "Content model for service item",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "image",
+          "name": "Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "contactDetails",
+        "type": "ContentType",
+        "createdAt": "2020-09-06T13:18:12.294Z",
+        "updatedAt": "2020-09-06T13:18:13.064Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2020-09-06T13:18:13.064Z",
+        "firstPublishedAt": "2020-09-06T13:18:13.064Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "displayField": "addressLine1",
+      "name": "Contact Details",
+      "description": "",
+      "fields": [
+        {
+          "id": "addressLine1",
+          "name": "Address Line 1",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "addressLine2",
+          "name": "Address Line 2",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contactNumber",
+          "name": "Contact Number",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "email",
+          "name": "Email",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "facebookUrl",
+          "name": "Facebook Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "twitterUrl",
+          "name": "Twitter Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "instagramUrl",
+          "name": "Instagram Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T10:52:58.337Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-01T11:11:41.601Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layout",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contentModule",
+          "settings": {
+            "bulkEditing": true,
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T10:57:34.687Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:45:44.977Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layoutHero",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "subheading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ctaUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2020-09-01T11:02:13.429Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:43:06.806Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layoutAbout",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "featureItem",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2020-09-01T11:05:54.817Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:46:29.210Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layoutTestimonials",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "testimonials",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T11:07:35.475Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-06T11:03:08.747Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layoutServices",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "serviceItems",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 6,
+        "createdAt": "2020-09-01T11:09:10.378Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:46:11.311Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layoutPricing",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "pricingPlans",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T11:11:01.282Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:45:22.040Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "layoutContact",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "heading",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T11:14:17.116Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:47:27.995Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "featuredItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "icon",
+          "settings": {
+            "helpText": "Icon reference can be found on google material icons."
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2020-09-01T11:15:59.000Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-01T11:16:00.171Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "testimonial",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "company",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "comment",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T11:44:54.007Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-06T11:15:28.379Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "pricingPlan",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "currency",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "perItem",
+          "settings": {
+            "helpText": "Example: Month, User, Year"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "planFeatures",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "buttonUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "featured",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2020-09-01T11:46:54.279Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-04T03:46:59.011Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "serviceItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "image",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p9ztf7mkb1tk",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2020-09-06T13:18:13.188Z",
+        "createdBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-09-06T13:18:14.990Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4YVrlf9LVBCJgRMugl5FED",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "contactDetails",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "addressLine1",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "addressLine2",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contactNumber",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "email",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "facebookUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "twitterUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "instagramUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "1MtSg1Lc1Cbyp8IZccAGv5",
+        "type": "Entry",
+        "createdAt": "2020-09-01T11:50:50.383Z",
+        "updatedAt": "2020-09-06T13:05:58.658Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2020-09-06T13:05:58.658Z",
+        "firstPublishedAt": "2020-09-01T11:59:29.554Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layout"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Homepage"
+        },
+        "description": {
+          "en-US": "Website's main page"
+        },
+        "contentModule": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3TD6B60380bRg8a1Yemrh1"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3P3LaT9TfLhTjTmYuMqM5"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3z5GvjpSTppkGCSkeO3t9f"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2Y0uWhHndzhFEfiMymI9A8"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5mOkRvcg880yautzJyCclE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4iMGLJwbYOmLwbK43ujDW9"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3TD6B60380bRg8a1Yemrh1",
+        "type": "Entry",
+        "createdAt": "2020-09-01T11:51:14.619Z",
+        "updatedAt": "2020-09-06T12:29:14.997Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2020-09-06T12:29:14.997Z",
+        "firstPublishedAt": "2020-09-01T11:54:47.042Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layoutHero"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Get fast load speed"
+        },
+        "subheading": {
+          "en-US": "Turn leads into customers monthly"
+        },
+        "description": {
+          "en-US": "Ham hock spare ribs biltong beef ribs jerky capicola chuck pork belly swine. Picanha brisket hamburger alcatra salami venison turkey bresaola pork loin filet mignon."
+        },
+        "ctaText": {
+          "en-US": "Know More"
+        },
+        "ctaUrl": {
+          "en-US": "#about"
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3rdL7No5y5XeqwPy0fYUjP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3P3LaT9TfLhTjTmYuMqM5",
+        "type": "Entry",
+        "createdAt": "2020-09-01T11:55:32.201Z",
+        "updatedAt": "2020-09-06T12:32:20.184Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-09-06T12:32:20.184Z",
+        "firstPublishedAt": "2020-09-01T11:59:23.391Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layoutAbout"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "About Us"
+        },
+        "description": {
+          "en-US": "Andouille ball tip chislic sirloin jerky pig beef ribs brisket fatback ground round biltong bacon shoulder landjaeger. "
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6NxcbCwwDnZOS0fQ3UTjOv"
+            }
+          }
+        },
+        "featureItem": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1wzQZWppzqVwSpUDLKA4lH"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3uCsOYmM1Rq8NWkndAfwQT"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "64uKUd674jbszIlSaa3qV3"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "1wzQZWppzqVwSpUDLKA4lH",
+        "type": "Entry",
+        "createdAt": "2020-09-01T11:57:24.395Z",
+        "updatedAt": "2020-09-01T11:58:12.890Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-09-01T11:58:12.890Z",
+        "firstPublishedAt": "2020-09-01T11:58:12.890Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuredItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "About One"
+        },
+        "description": {
+          "en-US": "Meatball qui laboris buffalo drumstick prosciutto sed eiusmod."
+        },
+        "icon": {
+          "en-US": "alarm_on"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3uCsOYmM1Rq8NWkndAfwQT",
+        "type": "Entry",
+        "createdAt": "2020-09-04T07:14:59.700Z",
+        "updatedAt": "2020-09-04T07:19:14.887Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2020-09-04T07:19:14.887Z",
+        "firstPublishedAt": "2020-09-04T07:18:01.465Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuredItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "About Two"
+        },
+        "description": {
+          "en-US": "Chislic frankfurter kevin, strip steak chicken tongue tri-tip."
+        },
+        "icon": {
+          "en-US": "fingerprint"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "64uKUd674jbszIlSaa3qV3",
+        "type": "Entry",
+        "createdAt": "2020-09-04T07:19:18.326Z",
+        "updatedAt": "2020-09-04T07:19:53.558Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-09-04T07:19:53.558Z",
+        "firstPublishedAt": "2020-09-04T07:19:53.558Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "featuredItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "About Three"
+        },
+        "description": {
+          "en-US": "Leberkas brisket doner, ham cupim hamburger beef"
+        },
+        "icon": {
+          "en-US": "timeline"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3z5GvjpSTppkGCSkeO3t9f",
+        "type": "Entry",
+        "createdAt": "2020-09-04T07:29:40.812Z",
+        "updatedAt": "2020-09-04T07:52:08.312Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2020-09-04T07:52:08.312Z",
+        "firstPublishedAt": "2020-09-04T07:52:08.312Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layoutTestimonials"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "What our customers say"
+        },
+        "description": {
+          "en-US": "Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!"
+        },
+        "testimonials": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "248LkZdxvo07axu0NUTONT"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4LchTlJ5XpnkiEeInAhBtr"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "lmimCiUNcB7bChQeCkSt7"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "248LkZdxvo07axu0NUTONT",
+        "type": "Entry",
+        "createdAt": "2020-09-04T07:30:15.511Z",
+        "updatedAt": "2020-09-04T07:47:52.950Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-04T07:47:52.950Z",
+        "firstPublishedAt": "2020-09-04T07:47:52.950Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonial"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Max Hunter"
+        },
+        "company": {
+          "en-US": "Bacon Inc"
+        },
+        "comment": {
+          "en-US": "Ground round shank kielbasa, alcatra boudin ham meatloaf picanha. Beef ribs shoulder picanha chuck jerky hamburger."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "12PQybIC9ExPpoV3qR6oqu"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "4LchTlJ5XpnkiEeInAhBtr",
+        "type": "Entry",
+        "createdAt": "2020-09-04T07:48:00.166Z",
+        "updatedAt": "2020-09-04T07:50:30.540Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-04T07:50:30.540Z",
+        "firstPublishedAt": "2020-09-04T07:50:30.540Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonial"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Eric Smith"
+        },
+        "company": {
+          "en-US": "Globeworks"
+        },
+        "comment": {
+          "en-US": "Leberkas brisket doner, ham cupim hamburger beef capicola frankfurter kielbasa salami chuck shankle prosciutto ham hock."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7tssErXhbLeuF5DsTAUgpv"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "lmimCiUNcB7bChQeCkSt7",
+        "type": "Entry",
+        "createdAt": "2020-09-04T07:50:38.920Z",
+        "updatedAt": "2020-09-04T07:51:50.711Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-09-04T07:51:50.711Z",
+        "firstPublishedAt": "2020-09-04T07:51:50.711Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "testimonial"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Cindy Heartman"
+        },
+        "company": {
+          "en-US": "Ironavigation"
+        },
+        "comment": {
+          "en-US": "Pork loin turkey filet mignon, bacon frankfurter drumstick capicola cow biltong andouille. "
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "ElVe8IZJMxROI87lueH9F"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "2Y0uWhHndzhFEfiMymI9A8",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:00:55.268Z",
+        "updatedAt": "2020-09-06T11:09:30.538Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-09-06T11:09:30.538Z",
+        "firstPublishedAt": "2020-09-06T11:09:30.538Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layoutServices"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Our Services"
+        },
+        "description": {
+          "en-US": "Kevin tail porchetta ham hock bresaola pork belly. Venison sausage picanha beef t-bone pork loin chislic ground round tongue burgdoggen meatloaf meatball tenderloin cow shankle."
+        },
+        "serviceItems": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6h77CL2ZrFNRmr8ggV0s3G"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1hMiWuXsmoDHYsVPylFHIa"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2DZ0jGzCEHiNTnJKbecZZs"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "zAkcq85ebwb7gUozxYeUe"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "6h77CL2ZrFNRmr8ggV0s3G",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:03:23.728Z",
+        "updatedAt": "2020-09-06T11:06:21.837Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-06T11:06:21.837Z",
+        "firstPublishedAt": "2020-09-06T11:04:37.031Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "serviceItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Service 1"
+        },
+        "description": {
+          "en-US": "T-bone porchetta flank, ball tip kielbasa shank pork fatback frankfurter alcatra bacon jerky."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3jF6EbY30Kvb4KP9pPydlO"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "1hMiWuXsmoDHYsVPylFHIa",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:04:41.697Z",
+        "updatedAt": "2020-09-06T11:06:04.064Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:06:04.064Z",
+        "firstPublishedAt": "2020-09-06T11:06:04.064Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "serviceItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Service 2"
+        },
+        "description": {
+          "en-US": "Pork pork chop pancetta short loin leberkas jerky pastrami hamburger chislic. Tongue t-bone chicken, short ribs hamburger prosciutto swine."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4YDZWbsnuC48ozyawSu82b"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "2DZ0jGzCEHiNTnJKbecZZs",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:06:08.037Z",
+        "updatedAt": "2020-09-06T11:07:49.900Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-09-06T11:07:49.900Z",
+        "firstPublishedAt": "2020-09-06T11:07:49.900Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "serviceItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Service 3"
+        },
+        "description": {
+          "en-US": "T-bone cupim pork loin porchetta frankfurter capicola doner kevin tongue ribeye cow ball tip jowl ground round chislic. Picanha frankfurter pork belly sausage prosciutto swine fatback salami doner."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3rMlVVCsWOKV0YC4NUAKj4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "zAkcq85ebwb7gUozxYeUe",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:07:54.912Z",
+        "updatedAt": "2020-09-06T11:09:12.982Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:09:12.982Z",
+        "firstPublishedAt": "2020-09-06T11:09:12.982Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "serviceItem"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Service 4"
+        },
+        "description": {
+          "en-US": "Kevin tail porchetta ham hock bresaola pork belly. Venison sausage picanha beef t-bone pork loin chislic ground round tongue burgdoggen meatloaf meatball tenderloin cow shankle."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5vGPe9zWYTAQjd8FIrJMkE"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "5mOkRvcg880yautzJyCclE",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:09:50.735Z",
+        "updatedAt": "2020-09-06T11:18:03.513Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-06T11:18:03.513Z",
+        "firstPublishedAt": "2020-09-06T11:18:03.513Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layoutPricing"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Pricing"
+        },
+        "description": {
+          "en-US": " Pork pork chop pancetta short loin leberkas jerky pastrami hamburger chislic."
+        },
+        "pricingPlans": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "lTvSPg85vsdhXyWAJVc70"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6VuAzDECvW7d3UevbbLFhB"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1huqB98dLs4vEviamU9Rrn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "lTvSPg85vsdhXyWAJVc70",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:10:29.774Z",
+        "updatedAt": "2020-09-06T11:15:58.825Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-09-06T11:15:58.825Z",
+        "firstPublishedAt": "2020-09-06T11:11:48.268Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pricingPlan"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Basic"
+        },
+        "currency": {
+          "en-US": "$"
+        },
+        "price": {
+          "en-US": 200
+        },
+        "perItem": {
+          "en-US": "mo"
+        },
+        "planFeatures": {
+          "en-US": [
+            "Shank strip steak",
+            "Porchetta shankle",
+            "Filet mignon jerky"
+          ]
+        },
+        "buttonText": {
+          "en-US": "Contact Sales"
+        },
+        "buttonUrl": {
+          "en-US": "#"
+        },
+        "featured": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "6VuAzDECvW7d3UevbbLFhB",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:11:53.340Z",
+        "updatedAt": "2020-09-06T11:16:11.871Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-09-06T11:16:11.871Z",
+        "firstPublishedAt": "2020-09-06T11:13:07.308Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pricingPlan"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Standard"
+        },
+        "currency": {
+          "en-US": "$"
+        },
+        "price": {
+          "en-US": 450
+        },
+        "perItem": {
+          "en-US": "mo"
+        },
+        "planFeatures": {
+          "en-US": [
+            "Shank strip steak",
+            "Porchetta shankle",
+            "Filet mignon jerky",
+            "Chicken chislic"
+          ]
+        },
+        "buttonText": {
+          "en-US": "Contact Sales"
+        },
+        "buttonUrl": {
+          "en-US": "#"
+        },
+        "featured": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "1huqB98dLs4vEviamU9Rrn",
+        "type": "Entry",
+        "createdAt": "2020-09-06T11:16:21.272Z",
+        "updatedAt": "2020-09-06T11:17:48.388Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-09-06T11:17:48.388Z",
+        "firstPublishedAt": "2020-09-06T11:17:48.388Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pricingPlan"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Premium"
+        },
+        "currency": {
+          "en-US": "$"
+        },
+        "price": {
+          "en-US": 1000
+        },
+        "perItem": {
+          "en-US": "mo"
+        },
+        "planFeatures": {
+          "en-US": [
+            "Shank strip steak",
+            "Porchetta shankle",
+            "Filet mignon jerky",
+            "Chicken chislic",
+            "Doner buffalo"
+          ]
+        },
+        "buttonText": {
+          "en-US": "Contact Sales"
+        },
+        "buttonUrl": {
+          "en-US": "#"
+        },
+        "featured": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "4iMGLJwbYOmLwbK43ujDW9",
+        "type": "Entry",
+        "createdAt": "2020-09-06T12:36:39.045Z",
+        "updatedAt": "2020-09-06T12:55:04.806Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T12:55:04.806Z",
+        "firstPublishedAt": "2020-09-06T12:55:04.806Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "layoutContact"
+          }
+        }
+      },
+      "fields": {
+        "heading": {
+          "en-US": "Contact Us"
+        },
+        "description": {
+          "en-US": "T-bone porchetta flank, ball tip kielbasa shank pork fatback frankfurter alcatra bacon jerky."
+        },
+        "image": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4LjjYLKqKiJqWQwI44vh5n"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "4SJyfe2HYRPcQaul1cc4Hc",
+        "type": "Entry",
+        "createdAt": "2020-09-06T13:24:38.660Z",
+        "updatedAt": "2020-09-06T13:25:57.615Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2020-09-06T13:25:57.615Z",
+        "firstPublishedAt": "2020-09-06T13:25:57.615Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "contactDetails"
+          }
+        }
+      },
+      "fields": {
+        "addressLine1": {
+          "en-US": "649 Washington St."
+        },
+        "addressLine2": {
+          "en-US": "Los Angeles, CA 90008"
+        },
+        "contactNumber": {
+          "en-US": "(541) 754-3010"
+        },
+        "email": {
+          "en-US": "hi@thebakerdev.com"
+        },
+        "facebookUrl": {
+          "en-US": "www.facebook.com"
+        },
+        "twitterUrl": {
+          "en-US": "www.twitter.com"
+        },
+        "instagramUrl": {
+          "en-US": "www.instagram.com"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3kBeqghHAPwGIwO6khlbP",
+        "type": "Asset",
+        "createdAt": "2020-09-01T11:53:14.932Z",
+        "updatedAt": "2020-09-01T11:54:35.394Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-01T11:54:35.394Z",
+        "firstPublishedAt": "2020-09-01T11:54:35.394Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "hero"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/3kBeqghHAPwGIwO6khlbP/095d4f99fa152a442340577441e1c3a9/hero.svg",
+            "details": {
+              "size": 39870,
+              "image": {
+                "width": 476,
+                "height": 342
+              }
+            },
+            "fileName": "hero.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "18PzbwFUIycI8ReXDuVKsu",
+        "type": "Asset",
+        "createdAt": "2020-09-01T11:56:21.733Z",
+        "updatedAt": "2020-09-01T11:56:55.990Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-01T11:56:55.990Z",
+        "firstPublishedAt": "2020-09-01T11:56:55.990Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "about"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/18PzbwFUIycI8ReXDuVKsu/55182130ce40d00602f01814b9ce4917/about.svg",
+            "details": {
+              "size": 16313,
+              "image": {
+                "width": 480,
+                "height": 392
+              }
+            },
+            "fileName": "about.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "12PQybIC9ExPpoV3qR6oqu",
+        "type": "Asset",
+        "createdAt": "2020-09-04T07:46:21.191Z",
+        "updatedAt": "2020-09-04T07:47:47.211Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T07:47:47.211Z",
+        "firstPublishedAt": "2020-09-04T07:47:47.211Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "face1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/12PQybIC9ExPpoV3qR6oqu/a860b49c8287d0b2f4e404e36bc1ea28/face1.jpg",
+            "details": {
+              "size": 15641,
+              "image": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "fileName": "face1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "7b1XBCK6oKuu0MI6CGmx2j",
+        "type": "Asset",
+        "createdAt": "2020-09-04T07:46:21.449Z",
+        "updatedAt": "2020-09-04T07:47:03.594Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T07:47:03.594Z",
+        "firstPublishedAt": "2020-09-04T07:47:03.594Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "face1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/7b1XBCK6oKuu0MI6CGmx2j/919f1495088c91685359fc29cad12627/face1.jpg",
+            "details": {
+              "size": 15641,
+              "image": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "fileName": "face1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "7tssErXhbLeuF5DsTAUgpv",
+        "type": "Asset",
+        "createdAt": "2020-09-04T07:49:51.576Z",
+        "updatedAt": "2020-09-04T07:50:19.916Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T07:50:19.916Z",
+        "firstPublishedAt": "2020-09-04T07:50:19.916Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "face2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/7tssErXhbLeuF5DsTAUgpv/b409378a82b969a026996d13590f4d43/face2.jpg",
+            "details": {
+              "size": 22905,
+              "image": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "fileName": "face2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "ElVe8IZJMxROI87lueH9F",
+        "type": "Asset",
+        "createdAt": "2020-09-04T07:51:14.937Z",
+        "updatedAt": "2020-09-04T07:51:36.071Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-04T07:51:36.071Z",
+        "firstPublishedAt": "2020-09-04T07:51:36.071Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "face3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/ElVe8IZJMxROI87lueH9F/5bb7f25c564f6518fdad43e3514c1e67/face3.jpg",
+            "details": {
+              "size": 15191,
+              "image": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "fileName": "face3.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3jF6EbY30Kvb4KP9pPydlO",
+        "type": "Asset",
+        "createdAt": "2020-09-06T11:03:47.865Z",
+        "updatedAt": "2020-09-06T11:04:30.053Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:04:30.053Z",
+        "firstPublishedAt": "2020-09-06T11:04:30.053Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "service1"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/3jF6EbY30Kvb4KP9pPydlO/4c131628f9caf85df1aa30a9245b3d8a/service1.png",
+            "details": {
+              "size": 9260,
+              "image": {
+                "width": 208,
+                "height": 146
+              }
+            },
+            "fileName": "service1.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "4YDZWbsnuC48ozyawSu82b",
+        "type": "Asset",
+        "createdAt": "2020-09-06T11:05:03.745Z",
+        "updatedAt": "2020-09-06T11:05:42.157Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-09-06T11:05:42.157Z",
+        "firstPublishedAt": "2020-09-06T11:05:37.986Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "service 2"
+        },
+        "description": {
+          "en-US": "Bacon ipsum dolor amet biltong hamburger shankle, flank alcatra turkey pork belly. Jowl meatloaf pork loin, drumstick capicola tail pig."
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/4YDZWbsnuC48ozyawSu82b/c91974d5d8715046b1fbcec03c0cde28/service2.png",
+            "details": {
+              "size": 7698,
+              "image": {
+                "width": 208,
+                "height": 140
+              }
+            },
+            "fileName": "service2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3rMlVVCsWOKV0YC4NUAKj4",
+        "type": "Asset",
+        "createdAt": "2020-09-06T11:06:57.684Z",
+        "updatedAt": "2020-09-06T11:07:42.594Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:07:42.594Z",
+        "firstPublishedAt": "2020-09-06T11:07:42.594Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "service3"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/3rMlVVCsWOKV0YC4NUAKj4/ade86de15b954dd1872d3d470468345f/service3.png",
+            "details": {
+              "size": 10900,
+              "image": {
+                "width": 208,
+                "height": 147
+              }
+            },
+            "fileName": "service3.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "5vGPe9zWYTAQjd8FIrJMkE",
+        "type": "Asset",
+        "createdAt": "2020-09-06T11:08:41.888Z",
+        "updatedAt": "2020-09-06T11:09:06.525Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T11:09:06.525Z",
+        "firstPublishedAt": "2020-09-06T11:09:06.525Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "service4"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/5vGPe9zWYTAQjd8FIrJMkE/222e22a59ead56b401b0205a40fa816f/service4.png",
+            "details": {
+              "size": 12272,
+              "image": {
+                "width": 208,
+                "height": 147
+              }
+            },
+            "fileName": "service4.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "3rdL7No5y5XeqwPy0fYUjP",
+        "type": "Asset",
+        "createdAt": "2020-09-06T12:25:19.748Z",
+        "updatedAt": "2020-09-06T12:25:48.238Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T12:25:48.238Z",
+        "firstPublishedAt": "2020-09-06T12:25:48.238Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "hero"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/3rdL7No5y5XeqwPy0fYUjP/da16e1aa9662f48f680d6d6632c0cf19/hero.png",
+            "details": {
+              "size": 31308,
+              "image": {
+                "width": 476,
+                "height": 342
+              }
+            },
+            "fileName": "hero.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "6NxcbCwwDnZOS0fQ3UTjOv",
+        "type": "Asset",
+        "createdAt": "2020-09-06T12:26:00.626Z",
+        "updatedAt": "2020-09-06T12:26:19.954Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-09-06T12:26:19.954Z",
+        "firstPublishedAt": "2020-09-06T12:26:19.954Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "about"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/6NxcbCwwDnZOS0fQ3UTjOv/cfcea2f4bb23fff185a0d4ede6357b2b/about.png",
+            "details": {
+              "size": 18936,
+              "image": {
+                "width": 480,
+                "height": 392
+              }
+            },
+            "fileName": "about.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "id": "4LjjYLKqKiJqWQwI44vh5n",
+        "type": "Asset",
+        "createdAt": "2020-09-06T12:37:12.778Z",
+        "updatedAt": "2020-09-06T12:54:58.041Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-09-06T12:54:58.041Z",
+        "firstPublishedAt": "2020-09-06T12:54:58.041Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contact Us"
+        },
+        "description": {
+          "en-US": "Ham rump doner turducken chislic flank kevin chuck venison hamburger pancetta ground round strip steak chicken."
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p9ztf7mkb1tk/4LjjYLKqKiJqWQwI44vh5n/ae762546a5f038bc71e73b573c65a185/contact.png",
+            "details": {
+              "size": 22080,
+              "image": {
+                "width": 331,
+                "height": 266
+              }
+            },
+            "fileName": "contact.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "63laiXVIZ2d4K8pWce5EyS",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "createdAt": "2020-09-01T10:49:47Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedAt": "2020-09-01T10:49:47Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "63lMJqd04j2mRliEPFc6dY",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p9ztf7mkb1tk"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "createdAt": "2020-09-01T10:49:47Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4YVrlf9LVBCJgRMugl5FED"
+          }
+        },
+        "updatedAt": "2020-09-01T10:49:47Z"
+      }
+    }
+  ]
+}

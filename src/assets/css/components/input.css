@@ -1,0 +1,25 @@
+.input-group {
+    label {
+        @apply block font-bold mb-1;
+    }
+}
+
+input[type='email'].input,
+input[type='number'].input, 
+input[type='password'].input,
+input[type='text'].input,
+textarea  {
+    @apply w-full border border-gray py-1 px-2 rounded;
+}
+
+input[type='email'].input--error,
+input[type='number'].input--error, 
+input[type='password'].input--error,
+input[type='text'].input--error,
+textarea.input--error  {
+    @apply border-error;
+
+    & + span {
+        @apply text-sm text-error block mt-2;
+    }
+}

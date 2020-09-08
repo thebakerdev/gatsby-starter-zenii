@@ -1,0 +1,9 @@
+.footer__content {
+    @apply w-full mb-6 px-4;
+}
+
+@screen md {
+    .footer__content {
+        @apply w-3/4;
+    }
+}

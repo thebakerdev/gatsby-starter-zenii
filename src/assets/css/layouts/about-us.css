@@ -1,0 +1,17 @@
+.about-us__content {
+    @apply w-full;
+}
+
+.about-us__image {
+    @apply w-full p-6;
+}
+
+@screen md {
+    .about-us__content {
+        @apply w-1/2 order-2;
+    }
+
+    .about-us__image {
+        @apply w-1/2 order-1 p-0;
+    }
+}

@@ -1,0 +1,33 @@
+.pricing__item {
+    @apply flex flex-col justify-between  bg-white rounded shadow-md mx-6 px-12 py-8 text-center mb-6;
+
+    &--active {
+        @apply bg-primary text-white;
+    }
+}
+
+.pricing__item-title {
+    @apply font-bold uppercase mb-4;
+}
+
+.pricing__item-price {
+    @apply mb-2;
+
+    span:first-child {
+        @apply text-primary;
+    }
+
+    span:nth-child(2) {
+        @apply text-primary font-bold text-5xl;
+    }
+}
+
+.pricing__item--active .pricing__item-price {
+    span {
+        @apply text-white;
+    }
+}
+
+.pricing__item-features {
+    @apply mb-8;
+}

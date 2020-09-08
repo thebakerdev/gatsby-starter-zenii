@@ -1,0 +1,34 @@
+.testimonials {
+    @apply pt-24 pb-0;
+}
+
+.testimonial__slider {
+    @apply relative;
+}
+
+.testimonial__content {
+    @apply relative text-center px-8 pt-8 pb-16 border border-lightGray rounded shadow-lg;
+}
+
+.testimonial {
+    padding: 50px 25px 25px;
+}
+
+.testimonial__image {
+    height: 100px;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 100px;
+    @apply absolute rounded-full shadow absolute;
+}
+
+.testimonial__name {
+    @apply block text-xl font-bold leading-none mt-8;
+}
+
+@screen md {
+    .testimonials {
+        @apply pb-24;
+    }
+}

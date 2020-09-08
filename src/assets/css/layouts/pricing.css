@@ -1,0 +1,10 @@
+.pricing__items {
+    @apply flex flex-col justify-center;
+}
+
+@screen md {
+    
+    .pricing__items {
+        @apply flex-row;
+    }
+}

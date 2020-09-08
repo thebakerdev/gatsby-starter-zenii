@@ -1,0 +1,39 @@
+.hero__tagline {
+    @apply flex items-center w-full text-center;
+}
+
+.hero__tagline-title {
+    @apply font-bold text-5xl;
+}
+
+.hero__tagline-subtitle {
+    @apply text-2xl;
+}
+
+.hero__tagline-text {
+    @apply w-full mt-2;
+}
+
+.hero__image {
+    @apply w-full pt-16;
+
+    img {
+        max-height: 342px;
+        max-width: 476px;
+        @apply w-full;
+    }
+}
+
+@screen md {
+    .hero__tagline {
+        @apply w-1/2 text-left;
+    }
+
+    .hero__tagline-text {
+        @apply w-3/4;
+    }
+
+    .hero__image {
+        @apply w-1/2 pt-0;
+    }
+}

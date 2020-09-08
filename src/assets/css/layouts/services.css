@@ -1,0 +1,31 @@
+.services__items {
+    @apply grid row-gap-16 grid-cols-1;
+}
+
+.service {
+    @apply text-center w-full;
+}
+
+.service__image {
+    @apply mx-auto mb-4;
+}
+
+.service__title {
+    @apply font-bold text-2xl mb-4;
+}
+
+@screen md {
+    .services__items {
+        @apply grid-cols-2;
+    }
+
+    .service {
+        &--left {
+            @apply w-1/2 ml-auto mr-24;
+        }
+
+        &--right {
+            @apply w-1/2 mr-auto ml-24;
+        }
+    }
+}

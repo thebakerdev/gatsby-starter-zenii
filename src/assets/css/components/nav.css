@@ -1,0 +1,102 @@
+.nav {
+    @apply flex items-center relative;
+}
+
+.nav__menu {
+    @apply hidden;
+
+    li {
+        @apply p-2 text-2xl uppercase;
+
+        &:hover {
+            @apply text-primary;
+        }
+    }
+
+    &--active {
+        @apply fixed flex flex-col justify-center items-center bg-white inset-0;
+    }
+}
+
+.nav__menu-button {
+    cursor: pointer;
+    height: 30px;
+    width: 35px;
+    @apply relative;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    span {
+        border-radius: 2px;
+        height: 5px;
+        transition: all .2s ease-in;
+        width: 35px;
+        @apply bg-tertiary block absolute;
+    }
+    
+    span:first-child {
+        top: 0;
+        transform-origin: left top;
+    }
+
+    span:nth-child(2) {
+        top: 12px;
+        right: 0;
+        width: 25px;
+    }
+
+    span:last-child {
+        top: 24px;
+        transform-origin: left bottom;
+    }
+
+    &--active {
+        span:first-child {
+            transform: rotate(45deg);
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(5px);
+        }
+
+        span:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+@screen sm {
+    .nav__menu {
+        @apply flex flex-row items-center static;
+    
+        li {
+            @apply mx-4 relative text-base;
+
+            &::after {
+                bottom: 2px;
+                content: '';
+                height: 4px;
+                opacity: 0;
+                transition: all .3s ease-in;
+                width: 0;
+            }
+            
+            &:hover::after {
+                opacity: 1;
+                width: calc(100% - 1rem);
+                @apply block absolute rounded bg-primary;
+            }
+
+            &:hover {
+                @apply text-tertiary;
+            }
+        }
+    }
+
+    .nav__menu-button {
+        @apply hidden;
+    }
+}
