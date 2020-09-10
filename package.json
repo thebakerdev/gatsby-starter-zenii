@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-tailwindcss-postcss",
+  "name": "gatsby-starter-zenii",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "description": "A One-page Gatsby starter built with Tailwindcss and  Postcss",
+  "version": "1.0.0",
   "license": "0BSD",
   "scripts": {
     "setup": "node ./bin/setup.js",
@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "postinstall": "node ./bin/hello.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "cleanup-repository": "yarn remove contentful-import chalk inquirer && node ./bin/cleanup.js && rimraf bin contentful"
+    "cleanup-repository": "npm uninstall contentful-import chalk inquirer && node ./bin/cleanup.js && rimraf bin contentful"
 
   },
   "dependencies": {
@@ -53,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/thebakerdev/gatsby-tailwindcss-postcss"
+    "url": "https://github.com/thebakerdev/gatsby-starter-zenii"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

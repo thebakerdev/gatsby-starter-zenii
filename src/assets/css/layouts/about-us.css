@@ -6,6 +6,11 @@
     @apply w-full p-6;
 }
 
+.about-us__image-wrap {
+    max-height: 390px;
+    max-width: 480px;
+}
+
 @screen md {
     .about-us__content {
         @apply w-1/2 order-2;

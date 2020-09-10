@@ -1,12 +1,13 @@
 import { Link } from 'gatsby';
 import React, { useEffect } from 'react';
-import SmoothScroll from 'smooth-scroll';
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
 
     const initSmoothScroll = () => {
 
         if (typeof window !== 'undefined') {
+
+            const SmoothScroll = require('smooth-scroll');
 
             const scroll = new SmoothScroll('a[href*="#"]', {
                 speed: 800,
@@ -14,6 +15,19 @@ const Header = ({ siteTitle }) => {
                 easing: 'easeOutQuart'
             });
         }
+    }
+
+    const toggleNav = () => {
+
+        const nav_menu_button = document.getElementById('nav_menu_button');
+
+        const nav_menu = document.getElementById('nav_menu');
+
+        nav_menu.classList.toggle('nav__menu--active');
+        
+        nav_menu_button.classList.toggle('nav__menu-button--active');
+        
+        document.body.classList.toggle('disable-scroll');
     }
 
     useEffect(() => {
@@ -28,12 +42,12 @@ const Header = ({ siteTitle }) => {
             <nav className="nav">
             <h2 className="hidden">Top navigation</h2>
             <ul id="nav_menu" className="nav__menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" onClick={toggleNav}>About</a></li>
+                <li><a href="#services" onClick={toggleNav}>Services</a></li>
+                <li><a href="#pricing" onClick={toggleNav}>Pricing</a></li>
+                <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
             </ul>
-            <button id="nav_menu_button" className="nav__menu-button">
+            <button id="nav_menu_button" className="nav__menu-button" aria-label="mobile menu" onClick={toggleNav}>
                 <span></span>
                 <span></span>
                 <span></span>

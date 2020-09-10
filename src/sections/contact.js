@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import validation from 'utils/validation';
 
@@ -54,7 +55,11 @@ const Contact = ({ contentModuleId }) => {
                 </form>
             </div>
             <div className="contact__image">
-                <img src={ content.node.image.fluid.src } className="mx-auto" alt="Contact" data-sal="slide-up" data-sal-delay="400" data-sal-duration="500" />
+                <div className="mx-auto" data-sal="slide-up" data-sal-delay="400" data-sal-duration="500">
+                    <div className="contact__image-wrap">
+                        <Img fluid={ content.node.image.fluid } alt="Contact" />
+                    </div>
+                </div>
             </div>
         </section>   
     );

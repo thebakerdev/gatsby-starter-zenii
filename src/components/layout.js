@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     return (
         <div className="wrapper overflow-hidden">
             <h1 className="hidden">{ data.site.siteMetadata.title }</h1>
-            <Header siteTitle={ data.site.siteMetadata.title } />
+            <Header/>
             <div>
                 <main>{ children }</main>
             </div>

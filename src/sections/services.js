@@ -22,8 +22,8 @@ const Services = ({ contentModuleId }) => {
                                 description
                             }
                             image {
-                                fluid {
-                                    src
+                                fluid(quality: 100, maxWidth: 208, maxHeight: 146) {
+                                    ...GatsbyContentfulFluid
                                 }
                             }
                         }

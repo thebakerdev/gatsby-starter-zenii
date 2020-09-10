@@ -25,7 +25,7 @@ const Testimonials = ({ contentModuleId }) => {
                             }
                             image{
                                 fluid (quality: 100) {
-                                    src
+                                    ...GatsbyContentfulFluid
                                 }
                             }
                         }

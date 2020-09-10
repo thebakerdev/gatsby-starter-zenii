@@ -2382,7 +2382,7 @@
         "id": "1wzQZWppzqVwSpUDLKA4lH",
         "type": "Entry",
         "createdAt": "2020-09-01T11:57:24.395Z",
-        "updatedAt": "2020-09-01T11:58:12.890Z",
+        "updatedAt": "2020-09-10T12:24:11.194Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2390,8 +2390,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2020-09-01T11:58:12.890Z",
+        "publishedVersion": 8,
+        "publishedAt": "2020-09-10T12:24:11.194Z",
         "firstPublishedAt": "2020-09-01T11:58:12.890Z",
         "createdBy": {
           "sys": {
@@ -2407,8 +2407,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2426,7 +2426,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "About One"
+          "en-US": "Fast Service Delivery"
         },
         "description": {
           "en-US": "Meatball qui laboris buffalo drumstick prosciutto sed eiusmod."
@@ -2448,7 +2448,7 @@
         "id": "3uCsOYmM1Rq8NWkndAfwQT",
         "type": "Entry",
         "createdAt": "2020-09-04T07:14:59.700Z",
-        "updatedAt": "2020-09-04T07:19:14.887Z",
+        "updatedAt": "2020-09-10T12:24:29.917Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2456,8 +2456,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 7,
-        "publishedAt": "2020-09-04T07:19:14.887Z",
+        "publishedVersion": 10,
+        "publishedAt": "2020-09-10T12:24:29.917Z",
         "firstPublishedAt": "2020-09-04T07:18:01.465Z",
         "createdBy": {
           "sys": {
@@ -2473,8 +2473,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 2,
-        "version": 8,
+        "publishedCounter": 3,
+        "version": 11,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2492,7 +2492,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "About Two"
+          "en-US": "Secured Apps"
         },
         "description": {
           "en-US": "Chislic frankfurter kevin, strip steak chicken tongue tri-tip."
@@ -2514,7 +2514,7 @@
         "id": "64uKUd674jbszIlSaa3qV3",
         "type": "Entry",
         "createdAt": "2020-09-04T07:19:18.326Z",
-        "updatedAt": "2020-09-04T07:19:53.558Z",
+        "updatedAt": "2020-09-10T12:26:24.722Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2522,8 +2522,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2020-09-04T07:19:53.558Z",
+        "publishedVersion": 11,
+        "publishedAt": "2020-09-10T12:26:24.722Z",
         "firstPublishedAt": "2020-09-04T07:19:53.558Z",
         "createdBy": {
           "sys": {
@@ -2539,8 +2539,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 4,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -2558,7 +2558,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "About Three"
+          "en-US": "Increased Leads"
         },
         "description": {
           "en-US": "Leberkas brisket doner, ham cupim hamburger beef"
@@ -2988,7 +2988,7 @@
         "id": "6h77CL2ZrFNRmr8ggV0s3G",
         "type": "Entry",
         "createdAt": "2020-09-06T11:03:23.728Z",
-        "updatedAt": "2020-09-06T11:06:21.837Z",
+        "updatedAt": "2020-09-10T12:21:52.031Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -2996,8 +2996,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2020-09-06T11:06:21.837Z",
+        "publishedVersion": 8,
+        "publishedAt": "2020-09-10T12:21:52.031Z",
         "firstPublishedAt": "2020-09-06T11:04:37.031Z",
         "createdBy": {
           "sys": {
@@ -3013,8 +3013,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 2,
-        "version": 6,
+        "publishedCounter": 3,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3032,7 +3032,7 @@
       },
       "fields": {
         "title": {
-          "en-US": "Service 1"
+          "en-US": "Website Analytics"
         },
         "description": {
           "en-US": "T-bone porchetta flank, ball tip kielbasa shank pork fatback frankfurter alcatra bacon jerky."
@@ -3060,7 +3060,7 @@
         "id": "1hMiWuXsmoDHYsVPylFHIa",
         "type": "Entry",
         "createdAt": "2020-09-06T11:04:41.697Z",
-        "updatedAt": "2020-09-06T11:06:04.064Z",
+        "updatedAt": "2020-09-10T12:22:08.911Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3068,8 +3068,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2020-09-06T11:06:04.064Z",
+        "publishedVersion": 8,
+        "publishedAt": "2020-09-10T12:22:08.911Z",
         "firstPublishedAt": "2020-09-06T11:06:04.064Z",
         "createdBy": {
           "sys": {
@@ -3085,8 +3085,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 1,
-        "version": 4,
+        "publishedCounter": 3,
+        "version": 9,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3104,10 +3104,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Service 2"
+          "en-US": "Email Marketing"
         },
         "description": {
-          "en-US": "Pork pork chop pancetta short loin leberkas jerky pastrami hamburger chislic. Tongue t-bone chicken, short ribs hamburger prosciutto swine."
+          "en-US": "Pork pork chop pancetta short loin leberkas jerky pastrami hamburger chislic. "
         },
         "image": {
           "en-US": {
@@ -3132,7 +3132,7 @@
         "id": "2DZ0jGzCEHiNTnJKbecZZs",
         "type": "Entry",
         "createdAt": "2020-09-06T11:06:08.037Z",
-        "updatedAt": "2020-09-06T11:07:49.900Z",
+        "updatedAt": "2020-09-10T12:22:27.333Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3140,8 +3140,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 4,
-        "publishedAt": "2020-09-06T11:07:49.900Z",
+        "publishedVersion": 7,
+        "publishedAt": "2020-09-10T12:22:27.333Z",
         "firstPublishedAt": "2020-09-06T11:07:49.900Z",
         "createdBy": {
           "sys": {
@@ -3157,8 +3157,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 1,
-        "version": 5,
+        "publishedCounter": 2,
+        "version": 8,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3176,10 +3176,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Service 3"
+          "en-US": "Mobile Apps"
         },
         "description": {
-          "en-US": "T-bone cupim pork loin porchetta frankfurter capicola doner kevin tongue ribeye cow ball tip jowl ground round chislic. Picanha frankfurter pork belly sausage prosciutto swine fatback salami doner."
+          "en-US": "T-bone cupim pork loin porchetta frankfurter capicola doner kevin tongue ribeye cow ball tip jowl ground round chislic. "
         },
         "image": {
           "en-US": {
@@ -3204,7 +3204,7 @@
         "id": "zAkcq85ebwb7gUozxYeUe",
         "type": "Entry",
         "createdAt": "2020-09-06T11:07:54.912Z",
-        "updatedAt": "2020-09-06T11:09:12.982Z",
+        "updatedAt": "2020-09-10T12:22:50.572Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3212,8 +3212,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2020-09-06T11:09:12.982Z",
+        "publishedVersion": 6,
+        "publishedAt": "2020-09-10T12:22:50.572Z",
         "firstPublishedAt": "2020-09-06T11:09:12.982Z",
         "createdBy": {
           "sys": {
@@ -3229,8 +3229,8 @@
             "id": "4YVrlf9LVBCJgRMugl5FED"
           }
         },
-        "publishedCounter": 1,
-        "version": 4,
+        "publishedCounter": 2,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3248,10 +3248,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Service 4"
+          "en-US": "Web Apps"
         },
         "description": {
-          "en-US": "Kevin tail porchetta ham hock bresaola pork belly. Venison sausage picanha beef t-bone pork loin chislic ground round tongue burgdoggen meatloaf meatball tenderloin cow shankle."
+          "en-US": "Venison sausage picanha beef t-bone pork loin chislic ground round tongue burgdoggen meatloaf meatball tenderloin cow shankle."
         },
         "image": {
           "en-US": {

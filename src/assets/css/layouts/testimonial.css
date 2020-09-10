@@ -20,7 +20,7 @@
     top: -50px;
     transform: translateX(-50%);
     width: 100px;
-    @apply absolute rounded-full shadow absolute;
+    @apply absolute rounded-full shadow;
 }
 
 .testimonial__name {

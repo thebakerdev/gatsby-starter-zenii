@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import AboutItem from 'components/aboutItem';
 
@@ -49,13 +50,14 @@ const About = ({ contentModuleId }) => {
                                 content.node.featureItem.map(feature => (
                                     <AboutItem feature={ feature } key={ feature.id } />
                                 ))
-
                             }
                         </ul>
                     }
                 </div>
                 <div className="about-us__image">
-                    <img src={ content.node.image.fluid.src } className="mx-auto" alt="About" data-sal="slide-up" data-sal-delay="400" data-sal-duration="500" />
+                    <div className="mx-auto about-us__image-wrap" data-sal="slide-up" data-sal-delay="200" data-sal-duration="500">
+                        <Img fluid={ content.node.image.fluid } />
+                    </div>
                 </div>
             </div>
         </section>

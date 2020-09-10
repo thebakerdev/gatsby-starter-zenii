@@ -6,6 +6,12 @@
     @apply hidden w-full;
 }
 
+.contact__image-wrap {
+    max-height: 265px;
+    max-width: 330px;
+    @apply mx-auto;
+}
+
 @screen md {
     .contact__content {
         @apply w-1/2;

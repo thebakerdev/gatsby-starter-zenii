@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
     siteMetadata: {
         title: `Zenii`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        description: `A One-page Gatsby starter built with Tailwindcss and  Postcss.`,
         author: `The Bakerdev`,
     },
     plugins: [

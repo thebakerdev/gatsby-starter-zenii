@@ -10,6 +10,12 @@
     @apply mx-auto mb-4;
 }
 
+.service__image-wrap {
+    max-height: 146px;
+    max-width: 207px;
+    @apply mx-auto;
+}
+
 .service__title {
     @apply font-bold text-2xl mb-4;
 }

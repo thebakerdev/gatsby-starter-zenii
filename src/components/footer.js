@@ -22,7 +22,7 @@ const Footer = () => {
         <footer className="footer bg-tertiary text-white">
             <div className="container section mx-auto py-10">
                 <div className="footer__content">
-                    <h4 className="text-lg font-bold mb-4">Contact Info</h4>
+                    <h3 className="text-lg font-bold mb-4">Contact Info</h3>
                     <ul className="text-sm">
                         <li className="mb-2">
                             <div className="item">
@@ -51,7 +51,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer__content">
-                    <h4 className="text-lg font-bold mb-4">Menu Links</h4>
+                    <h3 className="text-lg font-bold mb-4">Menu Links</h3>
                     <ul className="text-sm">
                         <li className="mb-2"><a className="hover:text-primary" href="#about">About</a></li>
                         <li className="mb-2"><a className="hover:text-primary" href="#services">Services</a></li>
@@ -60,7 +60,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer__content">
-                    <h4 className="text-lg font-bold mb-4">Follow Us</h4>
+                    <h3 className="text-lg font-bold mb-4">Follow Us</h3>
                     <ul className="flex text-sm">
                         <li className="mb-2 mr-4">
                             <a href={ data.contentfulContactDetails.facebookUrl }>
