@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 const Testimonial = ({ testimonial }) => (
@@ -11,5 +12,9 @@ const Testimonial = ({ testimonial }) => (
         </div>
     </div>
 );
+
+Testimonial.propTypes = {
+    testimonial : PropTypes.object.isRequired
+}
 
 export default Testimonial;

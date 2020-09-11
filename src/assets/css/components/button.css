@@ -13,4 +13,12 @@
     &--primary:hover {
         @apply bg-secondary;
     }
+
+    &--secondary {
+        @apply bg-secondary text-white;
+    }
+
+    &--secondary:hover {
+        @apply bg-primary;
+    }
 }

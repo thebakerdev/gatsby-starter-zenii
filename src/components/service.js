@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
 const Service = ({ service }) => (
@@ -10,5 +11,9 @@ const Service = ({ service }) => (
         <p>{ service.description.description }</p>
     </div>
 );
+
+Service.propTypes = {
+    service: PropTypes.object.isRequired
+};
 
 export default Service;

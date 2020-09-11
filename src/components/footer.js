@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const Footer = () => {
+const Footer = ({ menus }) => {
 
     const data = useStaticQuery(graphql`
         query {
@@ -17,6 +18,8 @@ const Footer = () => {
             }
         }
     `);
+
+    const footerMenu = (menus !== null &&  menus !== undefined) ? menus.find(menu => menu.type === 'secondary') : null;
 
     return (
         <footer className="footer bg-tertiary text-white">
@@ -50,15 +53,19 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="footer__content">
-                    <h3 className="text-lg font-bold mb-4">Menu Links</h3>
-                    <ul className="text-sm">
-                        <li className="mb-2"><a className="hover:text-primary" href="#about">About</a></li>
-                        <li className="mb-2"><a className="hover:text-primary" href="#services">Services</a></li>
-                        <li className="mb-2"><a className="hover:text-primary" href="#pricing">Pricing</a></li>
-                        <li className="mb-2"><a className="hover:text-primary" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+                {
+                    (footerMenu !== null && footerMenu !== undefined) &&
+                    <div className="footer__content">
+                        <h3 className="text-lg font-bold mb-4">Menu Links</h3>
+                        <ul className="text-sm">
+                            {
+                                footerMenu.menuItems.map(menu => (
+                                    <li className="mb-2" key={ menu.id } ><a className="hover:text-primary" href={ menu.url }>{ menu.title }</a></li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                }
                 <div className="footer__content">
                     <h3 className="text-lg font-bold mb-4">Follow Us</h3>
                     <ul className="flex text-sm">
@@ -83,5 +90,14 @@ const Footer = () => {
         </footer>
     );
 };
+
+Footer.defaultProps = {
+    menus: null
+};
+
+Footer.propTypes = {
+    menus: PropTypes.any
+};
+
 
 export default Footer;

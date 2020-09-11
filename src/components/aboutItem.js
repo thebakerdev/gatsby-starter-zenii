@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutItem = ({ feature}) => (
+const AboutItem = ({ feature }) => (
     <li className="mb-6">
         <div className="item" data-sal="slide-up" data-sal-easing="ease-in-cubic">
             <i className="item__icon material-icons text-primary">{ feature.icon }</i>

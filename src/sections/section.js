@@ -6,17 +6,20 @@ import Testimonials from 'sections/testimonials';
 import Services from 'sections/services';
 import Pricing from 'sections/pricing';
 import Contact from 'sections/contact';
+import PageNotFound from 'sections/pageNotFound';
 
+// Dynamically import or require sections inside the section folder
 const components = {
     Hero,
     About,
     Testimonials,
     Services,
     Pricing,
-    Contact
+    Contact,
+    PageNotFound
 };
 
-const Section = ({contentModuleId, type}) => {
+const Section = ({ contentModuleId, type }) => {
     
     const component = type.split('Layout')[1];
     
@@ -30,7 +33,8 @@ const Section = ({contentModuleId, type}) => {
 }
 
 Section.prototype = {
-    component: PropTypes.string.isRequired 
+    contentModuleId: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired
 }
 
 export default Section;

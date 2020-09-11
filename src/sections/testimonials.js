@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Glider from 'glider-js';
@@ -56,8 +57,8 @@ const Testimonials = ({ contentModuleId }) => {
    return (
     <section id="testimonials" className="testimonials container section mx-auto">
         <div className="w-full md:w-1/2 pl-0 md:pl-16 text-center md:text-left">
-            <h2 className="w-full md:w-3/4 font-bold text-5xl leading-none mb-6" data-sal="fade" data-sal-easing="ease-in-cubic">What our customers are saying</h2>
-            <p className="w-full md:w-3/4" data-sal="fade" data-sal-easing="ease-in-cubic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae.</p>
+            <h2 className="w-full md:w-3/4 font-bold text-5xl leading-none mb-6" data-sal="fade" data-sal-easing="ease-in-cubic">{ content.node.heading }</h2>
+            <p className="w-full md:w-3/4" data-sal="fade" data-sal-easing="ease-in-cubic">{ content.node.description.description }</p>
         </div>
         <div className="w-full md:w-1/2 pt-12 md:pt-0">
             {
@@ -80,5 +81,9 @@ const Testimonials = ({ contentModuleId }) => {
     </section>
    );
 };
+
+Testimonials.propTypes = {
+    contentModuleId : PropTypes.string.isRequired
+}
 
 export default Testimonials;

@@ -14,7 +14,7 @@ ${chalk.yellow.bold('npm run setup')} automates the following steps for you:
 When this is done run:
 
 ${chalk.yellow(
-  'npm run dev'
+  'npm run develop'
 )} to start a development environment at ${chalk.green('localhost:8000')}
 
 or

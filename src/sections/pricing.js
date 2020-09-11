@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import PricingPlan from 'components/pricingPlan';
 
-const Pricing = ({contentModuleId}) => {
+const Pricing = ({ contentModuleId }) => {
 
     const data = useStaticQuery(graphql`
         query {
@@ -53,5 +54,9 @@ const Pricing = ({contentModuleId}) => {
         </section>
     );
 };
+
+Pricing.propTypes = {
+    contentModuleId : PropTypes.string.isRequired
+}
 
 export default Pricing;

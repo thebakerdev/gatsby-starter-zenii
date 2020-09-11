@@ -6,7 +6,7 @@ import sal from 'sal.js';
 import Header from './header';
 import Footer from './footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, menus }) => {
 
     const data = useStaticQuery(graphql`
         query SiteTitleQuery {
@@ -26,17 +26,22 @@ const Layout = ({ children }) => {
     return (
         <div className="wrapper overflow-hidden">
             <h1 className="hidden">{ data.site.siteMetadata.title }</h1>
-            <Header/>
+            <Header menus={ menus }/>
             <div>
-                <main>{ children }</main>
+                { children }
             </div>
-            <Footer/>
+            <Footer menus={ menus }/>
         </div>
     );
 }
 
+Layout.defaultProps = {
+    menus: null
+};
+
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
+    menus: PropTypes.any
 };
 
 export default Layout;

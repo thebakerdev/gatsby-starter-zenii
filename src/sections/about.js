@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -63,5 +64,9 @@ const About = ({ contentModuleId }) => {
         </section>
    );
 };
+
+About.propTypes = {
+    contentModuleId : PropTypes.string.isRequired
+}
 
 export default About;

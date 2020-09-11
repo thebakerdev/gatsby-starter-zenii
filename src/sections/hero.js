@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const Hero = ({contentModuleId}) => {
+const Hero = ({ contentModuleId }) => {
     
     const data = useStaticQuery(graphql`
         query {
@@ -45,5 +46,9 @@ const Hero = ({contentModuleId}) => {
         </section>
     );
 };
+
+Hero.propTypes = {
+    contentModuleId : PropTypes.string.isRequired
+}
 
 export default Hero;

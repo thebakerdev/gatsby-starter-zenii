@@ -88,3 +88,13 @@ const content = data.allContentfulLayoutPortfolio.edges.find(edge => edge.node.i
 - And lastly add the new section layout in your contentful layout record. By default it is named as Homepage.
 - Sections can be rearranged in any order you want.
 
+### Contentful Content Types
+- **Layout** - The page layout content.
+- **Layout > &ast;** - The section content which is inside the layout.
+- **Menu** - Navigation menu for each layout
+- **Menu Item** - Navigation links for menu
+- **Contact Details** - Basic information and social media links
+- **Featured Items** - About section featured items
+- **Testimonial** - User testimonials
+- **Pricing Plan** - Product/Service plans
+- **Service Item** - Service items inside services section 
