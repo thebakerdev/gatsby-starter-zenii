@@ -40,17 +40,28 @@ npm run serve
 ## Theme Customizations
 
 ### Changing Colors
+
 The theme comes with a **tailwind.config.js** file and can be customized based on your preferred color scheme.
 
 ### Changing fonts
+
 The theme uses [gatsby-plugin-google-fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-fonts/) plugin to load google fonts. You can change font settings inside **gatsby-config.js** and **tailwind.config.js**.
 
-### Adding Additional Sections
-You can simply add your new section inside the **src/sections** folder and import it inside the **section.js** file. Create a new content model based on the section file. Ex. portfolio.js = Layout > Portfolio. Add the specific static query inside your section file and filter the specific section.
+### Pages and Sections
+
+You can simply add new sections and pages in the theme by creating new contentful model and map it to the component.
+
+#### Creating Sections
+
+- Create a layout in your contentful account and name it like **Layout > LayoutName** (ex. Layout > Portfolio) and add your specific fields.
+- Edit the **Layout** model **Content Module** settings and add your new layout to the **Accept only specified entry type** on the validation tab.
+- Create a section component inside **src/sections** (ex. portfolio.js).
+- Import the new component inside the **section.js** file and add it to the components array.   
+- Add static query inside your new section component. Make sure that the component accepts **contentModuleId** as a prop.
 ```
 const data = useStaticQuery(graphql`
   query {
-      allContentfulLayoutHero {
+      allContentfulLayoutPortfolio {
           edges {
               node {
                   id
@@ -72,7 +83,8 @@ const data = useStaticQuery(graphql`
   }
 `);
 
-const content = data.allContentfulLayoutHero.edges.find(edge => edge.node.id === contentModuleId);
+const content = data.allContentfulLayoutPortfolio.edges.find(edge => edge.node.id === contentModuleId);
 ```
-You can rearrange the sections inside contentful layout.
+- And lastly add the new section layout in your contentful layout record. By default it is named as Homepage.
+- Sections can be rearranged in any order you want.
 

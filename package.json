@@ -15,7 +15,6 @@
     "postinstall": "node ./bin/hello.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "cleanup-repository": "npm uninstall contentful-import chalk inquirer && node ./bin/cleanup.js && rimraf bin contentful"
-
   },
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
