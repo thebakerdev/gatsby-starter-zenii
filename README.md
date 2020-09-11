@@ -21,7 +21,7 @@ npm install
 ```
 This project comes with a Contentful setup command from [https://github.com/contentful-userland/gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter).
 ```
-npm setup
+npm run setup
 ```
 The process will ask for your credentials which can be found on your contentful settings. 
 ### Development Commands
