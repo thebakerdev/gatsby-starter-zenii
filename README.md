@@ -10,6 +10,10 @@ A One-page Gatsby starter built with Tailwindcss and  Postcss.
 ## Requirements
 The theme requires you to have a contentful account. You can register your account at [https://www.contentful.com/sign-up/](https://www.contentful.com/sign-up/).
 
+## Create with Stackbit
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/thebakerdev/gatsby-starter-zenii&ssg=gatsby&cms=contentful)
+
 ## Getting Started
 Clone the theme
 ```
