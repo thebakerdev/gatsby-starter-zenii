@@ -9,7 +9,7 @@ const NotFoundPage = () => {
 
     const data = useStaticQuery(graphql`
         query {
-            contentfulLayout(title: {eq: "404"}) {
+            contentfulLayout(slug: {eq: "404"}) {
                 id
                 title
                 description
@@ -32,15 +32,18 @@ const NotFoundPage = () => {
         }
     `);
 
+    const title = data.contentfulLayout.title;
+    const description = data.contentfulLayout.description;
+
     const menus = data.contentfulLayout.menu;
 
     const contentModule = data.contentfulLayout.contentModule;
-    
+
     return (
         <Layout menus={ menus }>
-            <SEO title="404: Not found" />
+            <SEO title={ title } description={ description } />
             {
-                contentModule.length > 0 && 
+                contentModule && contentModule.length > 0 &&
                 contentModule.map(content => (
                     <Section contentModuleId={ content.id } type={ content.__typename } key={content.id}/>
                 ))

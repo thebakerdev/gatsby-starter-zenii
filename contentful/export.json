@@ -63,6 +63,20 @@
           "omitted": false
         },
         {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
           "id": "description",
           "name": "Description",
           "type": "Symbol",
@@ -1631,6 +1645,11 @@
           "widgetNamespace": "builtin"
         },
         {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
           "fieldId": "description",
           "widgetId": "singleLine",
           "widgetNamespace": "builtin"
@@ -2646,6 +2665,9 @@
       "fields": {
         "title": {
           "en-US": "Homepage"
+        },
+        "slug": {
+          "en-US": "/"
         },
         "description": {
           "en-US": "Website's main page"
@@ -4340,6 +4362,9 @@
       },
       "fields": {
         "title": {
+          "en-US": "404"
+        },
+        "slug": {
           "en-US": "404"
         },
         "description": {
